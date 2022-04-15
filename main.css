@@ -1,0 +1,490 @@
+:root {
+    --negroVenn: #002b39;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-family: 'Hind', Helvetica, Arial, Lucida, sans-serif;
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+p{
+    font-family: Hind;
+    font-size: 18px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.17;
+    letter-spacing: normal;
+    text-align: center;
+    color: var(--negroVenn);
+}
+/*Logo centrado */
+#logoVenn{
+    display: block;
+    margin: auto;
+    width: 100px;
+    height: 100px;
+    padding-top: 50px;
+}
+h1,h2{
+    text-align: center;
+    color: var(--negroVenn);
+    font-size: 40px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style:normal ;
+    letter-spacing: normal;
+}
+
+button{
+    display: block;
+    margin: auto;
+    padding: 15px 45px 11px 46px;
+    object-fit: contain;
+    box-shadow: 0 9px 12px 0 rgb(26 72 100 / 16%);
+    background-image: linear-gradient(to top, #007fff, #00b1ff -10%);
+    color: #FFFFFF;
+    border-width: 0 ;
+    border-radius: 5px;
+    font-size: 18px;
+    background-color: #FFFFFF;
+    margin-bottom: 40px;
+    margin-top: 30px;
+}
+
+button:hover {
+    cursor: pointer;
+    border: 1px solid #007fff;
+    background: #fff;
+    color: #007fff;
+}
+
+/* Seccion 1 */
+#seccionPrincipal{
+    padding: 0px;
+    margin: 0px;
+    background-image: url("img/Grupo 9213.webp");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    padding-bottom: 100px;   
+}
+
+#tarjeta{
+    padding: 10px;       
+    background-image:url("/img/Rectángulo 8151.webp") no-repeat center center fixed ;
+    background-size: cover;
+    border: 1px solid rgb(199,199,199);
+    background-color: white;
+    max-width: 629px;
+    margin: auto;
+    border-radius: 10px;
+    display: grid;
+    align-items: center;
+}
+
+.subContenedores {
+    display: block;    
+}
+
+.imagenTarjeta {    
+    width: fit-content;
+    justify-self: center;    
+}
+
+.imagenTarjeta>img {
+    max-width: 240px;       
+}
+  
+.textoTarjeta {    
+    width: 100%;    
+}
+
+.textoTarjeta>h2 {    
+    font-size: 27px;
+    line-height: 32px;
+    color: #002b39;
+    font-weight: 500;
+    text-align: left;
+    margin: 0;
+}
+
+.tituloEstrellas {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between; 
+    align-items: start;
+    margin-bottom: 8px;
+}
+
+.titulo {
+    font-size: 18px;
+    line-height: 21px;
+    color: #1489ff;
+    font-weight: 500;   
+}
+
+.textoTarjeta>p {
+    font-size: 16px;
+    line-height: 21px;
+    color: #002b39;
+    text-align: left; 
+    margin: 0;
+}
+
+.estrellas {   
+    height: fit-content;
+}
+
+.estrellas>img {
+    max-height: 20px;
+}
+
+
+/*seccion 2*/
+#seccionDos{
+    padding: 0px;
+    margin: 0px;
+    background: transparent;
+    padding-bottom: 60px;   
+    padding-top: 60px;
+}
+
+#tarjetas {
+    padding: 10px;   
+    background-color: transparent;
+    max-width: 1000px;
+    margin: auto;
+    border-radius: 10px;
+    margin-bottom: 30px;    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;    
+}
+
+.tarjetaProductos {
+    border-radius: 10px;
+    width: 30%;
+    box-shadow: 1px 1px 1px 1px lightgrey;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.tarjetaProductos>img {
+    width: 704;
+    height: 660;
+}
+
+.tarjetaProductos>h5 {
+    font-size: 27px;
+    line-height: 32px;
+    color: #002b39;
+    font-weight: 500;
+    text-align: center;
+    margin: 10px;
+}
+
+/*Sección 3*/
+#seccionTres {
+    background: transparent;
+    margin-bottom: 80px;
+    padding-top: 20px;
+}
+
+.proceso {
+    padding: 10px; 
+    background: url(https://comunidad.venntors.com/wp-content/uploads/2021/12/Rectangulo-7185403x.png) no-repeat;
+    background-size: 70%;
+    background-position-y: 120px;
+    background-position-x: center;    
+    max-width: 862px;
+    margin: auto;    
+    margin-top: 30px;
+    margin-bottom: 30px;    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;    
+}
+
+.tarjetaProceso {    
+    border-radius: 10px;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tarjetaProceso>div {
+    display: block;
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+    max-width: 200px;
+    max-height: 200px;
+    margin: auto;
+}
+
+.img_1 {    
+    background: url(img/Grupo%209210.webp) no-repeat;  
+}
+.img_1:hover {    
+    background: url(img/nuevo7023.svg) no-repeat; 
+    background-size: cover; 
+}
+
+.img_2 {    
+    background: url(img/Grupo%207025.webp) no-repeat;  
+}
+.img_2:hover {    
+    background: url(img/nuevo7025.svg) no-repeat;  
+    background-size: cover; 
+}
+
+.img_3 {    
+    background: url(img/Grupo%207024.webp) no-repeat;  
+}
+.img_3:hover {    
+    background: url(img/Grupo-7024-1.svg) no-repeat; 
+    background-size: cover;  
+}
+
+
+.tarjetaProceso>p {
+    font-size: 22px;
+    color: #002b39;
+    text-align: center; 
+    margin: 0;
+}
+
+.tarjetaProceso:hover {
+    cursor:pointer;
+}
+
+/*Sección 4 */
+#seccionCuatro{
+    padding: 0px;
+    margin: 0px; 
+    background-image: url("img/Enmascarar\ grupo\ 259@3x.webp");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-position-y: 1px;
+    width: 100%;
+    padding-top: 150px;
+    margin-top: 100px;
+    margin-bottom: 150px;
+}
+
+.cuadroSeccionCuatro {
+    display: block;
+}
+
+.caracteristicas {
+    max-width: 950px;
+    margin: auto;
+    margin-bottom: 30px;
+    margin-top: 50px;
+    padding: 20px;    
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-between; 
+    gap: 35px;   
+}
+    
+.tarjetaCaracteristica {
+    border: 1px solid rgb(199,199,199);
+    border-radius: 10px;
+    padding: 20px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;        
+}
+
+.tarjetaCaracteristica:hover {
+    cursor: pointer;
+    border: 1px solid #007fff;
+}
+
+.tarjetaCaracteristica>img {
+    width: 35px;
+    height: 35px;  
+    margin-bottom: 10px;    
+ }
+
+ .tarjetaCaracteristica p {
+    font-family: Hind;
+    font-size: 16px;
+ }
+
+.tarjetaCaracteristica span {
+   font-weight: bold;      
+}
+
+/* Seccion 5 */
+footer {
+    background-color: #007fff;
+    padding: 40px 140px;
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-bottom: 10px;
+    border-bottom: 1px solid white;
+}
+.footer-top-image {
+    flex-basis: 50%;
+}
+
+.footer-top-networks {
+    flex-basis: 50%;   
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+.footer-top-networks>a {
+    padding-left: 25px;
+}
+
+.footer-bottom {
+    padding-top: 42px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: flex-end;     
+}
+
+.footer-bottom-text {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer-bottom-text>a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    padding-left: 10px;
+    
+}
+
+
+@media screen and (max-width: 980px){
+    #tarjetas {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;       
+    }
+
+    .tarjetaProductosDos {
+        display: none;
+    }
+
+    .tarjetaProductosTres {
+        display: none;
+    }
+
+    .proceso {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+
+        background: none;
+       
+    }
+
+    .tarjetaProceso {
+        border: 1px solid rgb(199,199,199);
+        padding-top: 20px;      
+    }
+
+    .tarjetaProceso>p {
+        font-size: 27px;        
+    }
+
+    .tarjetaProcesoDos {
+        display: none;
+    }
+
+    .tarjetaProcesoTres {
+        display: none;
+    } 
+}    
+
+
+@media screen and (min-width: 630px) {
+    #tarjeta{
+        grid-template-columns: auto auto;
+    }
+    .imagenTarjeta {
+        justify-self: start;        
+    }    
+}
+
+
+
+@media screen and (max-width: 939px) {
+    .caracteristicas {
+        grid-template-columns: 1fr 1fr;          
+    }       
+}
+
+@media screen and (max-width: 320px) {
+    .caracteristicas {
+        grid-template-columns: 1fr;          
+    }       
+}
+
+@media screen and (max-width: 630px) {
+    .footer-top {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        border-bottom: 1px solid white;        
+    }
+
+    .footer-top-image {
+        flex-basis: 100%;
+    }
+    
+    .footer-top-networks {
+        flex-basis: 100%;       
+        justify-content: space-between;        
+        gap: 45px;         
+    }
+    
+    .footer-top-networks>a {
+        padding-left: 0px;        
+    }
+    
+    .footer-bottom {        
+        grid-template-columns: 1fr;
+        justify-content:center;        
+    }
+    
+    .footer-bottom-text {
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 20px;
+    }
+}
