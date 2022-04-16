@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ejercicio4</title>
+</head>
+<body>
+            
+    <script>
+    //clase Persona
+    class Persona{
+        constructor(nombre, edad){
+            this.nombre =  nombre;
+            this.edad = edad;
+            this.metodo1 = function obtDetalles(){
+                console.log("Nombre: " + this.nombre + " , " + "Edad: " + this.edad );
+            }
+        }
+    }
+
+    var persona1 = new Persona("Ana","25");
+    persona1.metodo1();
+    
+    //Clase Estudiante
+    class Estudiante extends Persona{
+        constructor(nombre, edad, calificacion){
+            super(nombre,edad);
+            this.calificacion=  calificacion;
+
+            this.metodo1 = function obtDetalles(){
+                console.log("Nombre: " + this.nombre + " , " + "Edad: " + this.edad +  " , "+"Calificación: " + this.calificacion  );
+            }
+        }
+    }
+
+    var estudiante1 = new Estudiante("Sofia","28",100);
+    estudiante1.metodo1();
+    
+    //Clase Profesor
+    class Profesor extends Persona{
+        constructor(nombre, edad, asignatura = "JS", nivel ="Básico"){
+            super(nombre,edad);
+            this.asignatura =  asignatura;
+            this.nivel = nivel;
+
+            this.metodo1 = function obtDetalles(){
+                console.log("Nombre: " + this.nombre + " , " + "Edad: " + this.edad +  " , "+"Asignatura: " + this.asignatura + 
+                 " , "+"Nivel: " + this.nivel);
+            }
+        }
+    }
+
+    var profesor1 = new Profesor("Helena","48", "HTML", "Intermedio");
+    profesor1.metodo1();
+    
+
+    //Clase Grupo
+    class Grupo{
+        constructor(profesor, promedio, estudiante){
+            this.profesor = profesor;
+            this.promedio =  promedio;
+            this.estudiante = estudiante;
+
+            this.metodo1 = function obtDetalles(){
+                console.log("Nombre del profesor: " + this.profesor.nombre + " , " + "Edad: " + this.profesor.edad +" , " 
+                + "Asignatura: " + this.profesor.asignatura + " , " + "Nivel: " + this.profesor.nivel);
+                console.log("Estudiantes: " + this.estudiante);
+            }
+      }
+    }
+
+    //punto 5
+    var estudiantes=[["Maria", 22],["Laura", 25],["Juan", 21], ["Elías", 26],["Diego", 20], ["Paula", 29]];
+    console.log(estudiantes);
+    
+    var profesor2 = new Profesor("Carlos","48");
+    profesor2.metodo1();
+
+    var grupo1 = new Grupo(profesor2,80,estudiantes);
+    grupo1.metodo1();
+
+
+  
+  
+  
+    </script>
+
+
+</body>
+</html>

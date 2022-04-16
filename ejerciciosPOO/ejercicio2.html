@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 2 Arreglo ordenado con sólo números</title>
+</head>
+<body>
+    <h2>Ejercicio 2</h2>
+        
+    <script>
+      
+    //Arreglo inicial con valores de prueba
+    const inicio=["unacadena", 3, 9, 10, 500, 1, 10, true];
+    console.log(inicio);
+
+     //Función esNumero, usa la función typeof para comprobar si el valor recibido es un número, en cuyo caso retorna el valor recibido (el arreglo)
+     function esNumero(valor){                       
+        if (typeof valor === 'number'){              
+            return valor;
+        }
+    }
+        
+    //Creación del arreglo soloNumeros que será el resultado de filtrar el arreglo inicial     
+    const soloNumeros = inicio.filter(esNumero);     //método filter, recibe la función esNumero, devuelve un arreglo filtrado      
+    console.log(soloNumeros);       
+    
+    //Función intercambio: intercambia dos elementos de un arreglo
+    function intercambio (miArreglo, indiceUno, indiceDos){
+        let valorTemp = miArreglo[indiceUno];
+        miArreglo[indiceUno]=miArreglo[indiceDos];
+        miArreglo[indiceDos]=valorTemp;        
+        return miArreglo;
+    }
+        
+    //Función ordenamientoBurbuja, ordena los valores del arreglo de mayor a menor
+    function ordenamientoBurbuja(arreglo){
+        let tamaño = arreglo.length;
+        
+       for (let i = 1; i < tamaño; i++){
+            for (let j = 0; j < (tamaño - i); j++){
+                if (arreglo[j] < arreglo[j+1]){
+                    intercambio(arreglo, j, j+1);
+                }
+            }
+        }
+        return arreglo;
+    }
+
+    console.log(ordenamientoBurbuja(soloNumeros));
+    </script>
+    
+    </body>
+</html>

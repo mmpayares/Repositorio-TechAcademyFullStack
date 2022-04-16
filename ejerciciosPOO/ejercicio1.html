@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Serie de Fibonacci </title>
+</head>
+<body>
+    <h1>Serie Fibonacci</h1>
+       
+<script>
+    var numeroDeElemento= parseInt(prompt('introduce el número de resultados de la serie',0));
+    var a=1;
+    var b=0;
+    var suma=0;
+    for (let i=0; i<numeroDeElemento; i++){
+        console.log(suma);
+        suma=a+b;
+        a=b;
+        b=suma;
+    } 
+</script>
+</body>
+</html>

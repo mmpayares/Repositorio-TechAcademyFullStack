@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bonus</title>
+</head>
+<body>
+            
+    <script>
+    /*Escribe una function que genere todas las posibles combinaciones con las letras de dicho string. (La entrada la puede limitar a 3 letras) 
+    Ejemplo entrada : casa  Ejemplo salida: c,ca,cas,casa,a, ac, as,….*/ 
+
+    const generaCombinaciones = palabra => {
+    const combinaciones = [];
+    for (let i = 0; i < palabra.length; i++) {
+        let combinacion = palabra.charAt(i);
+        combinaciones.push(combinacion);
+        for (let j = i + 1; j < palabra.length; j++) {
+            combinacion += palabra.charAt(j);
+            combinaciones.push(combinacion);
+        }
+    }
+    return combinaciones;
+    };
+
+    const palabras = ["casa"];
+    for (const palabra of palabras) {
+        const combinaciones = generaCombinaciones(palabra);
+        console.log("Las combinaciones de '%s' son:", palabra);
+        for (const combinacion of combinaciones) {
+            console.log(combinacion);
+        }
+    }
+
+    </script>
+
+
+</body>
+</html>
